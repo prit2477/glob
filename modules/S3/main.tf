@@ -1,10 +1,9 @@
-resource "aws_s3_bucket" "apps_bucket" {
-    bucket = "bucket-name"
-    acl = "private"
-    versioning {
-            enabled = true
-    }
-    tags {
-        Name = "bucket-name"
-    }
+resource "aws_s3_bucket" "test_bucket" {
+    bucket = "${var.s3_bucket_name}" 
+    acl = "${var.acl}"   
 }
+
+    tags {
+        Name = "test_product"
+}
+

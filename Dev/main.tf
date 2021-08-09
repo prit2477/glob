@@ -3,3 +3,15 @@ provider "aws" {
   
 }
 
+module "EC2" {
+  source = "modules/EC2"
+
+  
+}
+module "S3" {
+  source = "modules/S3"
+}
+
+
+
+l
